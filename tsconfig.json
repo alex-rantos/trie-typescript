@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "module": "commonjs",
+    "outDir": "dist",
+    "sourceMap": false,
+    "strict": true,
+    "target": "ES6"
+  },
+  "include": ["src/**/*", "utils"]
+}

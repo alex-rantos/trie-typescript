@@ -1,0 +1,10 @@
+src/
+test-data/
+tests/
+utils/
+.vscode/
+.github/
+.prettierrc
+babel.config.js
+jest.config.ts
+tsconfig.json
