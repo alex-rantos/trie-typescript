@@ -8,3 +8,4 @@ utils/
 babel.config.js
 jest.config.ts
 tsconfig.json
+index.ts
