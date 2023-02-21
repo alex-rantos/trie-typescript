@@ -33,14 +33,22 @@ describe("AlphaNumericTrie", () => {
   it("should remove unsupported character from key when added", () => {
     const invalidString = "alex$___123aaaaaaaaaaa__231dawdadawfafga_";
     trie.add(invalidString, 5);
-    expect(trie.get(invalidString)).toEqual(null);
     expect(trie.has(invalidString)).toEqual(false);
-    expect(trie.get(invalidString.replace(onlyAlphanumericRegex, ""))).toEqual(
-      5
-    );
+    expect(trie.get(invalidString)).toEqual(null);
     expect(trie.has(invalidString.replace(onlyAlphanumericRegex, ""))).toEqual(
       true
     );
+    expect(trie.get(invalidString.replace(onlyAlphanumericRegex, ""))).toEqual(
+      5
+    );
+  });
+  it("should lowercase keys when added", () => {
+    const uppercaseKey = "ALLCAPS";
+    trie.add(uppercaseKey, 5);
+    expect(trie.has(uppercaseKey)).toEqual(false);
+    expect(trie.get(uppercaseKey)).toEqual(null);
+    expect(trie.has(uppercaseKey.toLowerCase())).toEqual(true);
+    expect(trie.get(uppercaseKey.toLowerCase())).toEqual(5);
   });
 });
 

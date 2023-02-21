@@ -44,7 +44,7 @@ export class AlphaNumericTrie<T> {
   public add = (key: string, value: T) => {
     let node = this._root;
     for (let i = 0; i < key.length; i++) {
-      const char = key[i];
+      const char = key[i].toLocaleLowerCase();
       const index = this.getIndexForChar(char, key);
 
       // If the character is not supported, skip it
