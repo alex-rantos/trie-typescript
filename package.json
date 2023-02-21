@@ -1,6 +1,6 @@
 {
   "name": "trie-typescript",
-  "version": "0.0.5-prelease",
+  "version": "1.0.0",
   "description": "",
   "main": "index.ts",
   "types": "dist/index.d.ts",
