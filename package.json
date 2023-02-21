@@ -17,7 +17,12 @@
     "exec": "tsc && node ./dist/index.js",
     "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
   },
-  "keywords": [],
+  "keywords": [
+    "trie",
+    "alphanumeric",
+    "search",
+    "data structure"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
