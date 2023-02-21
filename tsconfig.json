@@ -9,5 +9,5 @@
     "strict": true,
     "target": "ES6"
   },
-  "include": ["src/**/*", "utils"]
+  "include": ["src/**/*", "utils", "index.ts"]
 }

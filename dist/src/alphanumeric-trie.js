@@ -20,7 +20,7 @@ class AlphaNumericTrie {
         this.add = (key, value) => {
             let node = this._root;
             for (let i = 0; i < key.length; i++) {
-                const char = key[i];
+                const char = key[i].toLocaleLowerCase();
                 const index = this.getIndexForChar(char, key);
                 // If the character is not supported, skip it
                 if (index === -1)
